@@ -1,0 +1,793 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUMYSE | Ingeniería en Bombeo y Tratamiento de Agua</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-white font-sans text-gray-900">
+    <!-- HEADER -->
+    <header class="fixed w-full z-50 transition-all duration-300 bg-white shadow-md py-4">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center">
+            <img src="./logo.png" alt="SUMYSE Logo" class="h-12 w-auto">
+        </div>
+
+        <!-- Navegación Desktop -->
+        <nav class="hidden md:flex items-center space-x-8">
+            <!-- INICIO -->
+            <a href="#inicio" class="relative text-[#1F2A43] font-medium hover:text-[#F97316] transition-colors group">
+                Inicio
+                <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#F97316] transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            
+            <!-- SERVICIOS -->
+            <a href="#servicios" class="relative text-[#1F2A43] font-medium hover:text-[#F97316] transition-colors group">
+                Servicios
+                <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#F97316] transition-all duration-300 group-hover:w-full"></span>
+            </a>
+
+            <!-- NOSOTROS -->
+            <a href="#nosotros" class="relative text-[#1F2A43] font-medium hover:text-[#F97316] transition-colors group">
+                Nosotros
+                <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#F97316] transition-all duration-300 group-hover:w-full"></span>
+            </a>
+
+            <!-- CONTACTO -->
+            <a href="#contacto" class="relative text-[#1F2A43] font-medium hover:text-[#F97316] transition-colors group">
+                Contacto
+                <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#F97316] transition-all duration-300 group-hover:w-full"></span>
+            </a>
+
+            <!-- BOTÓN COTIZAR -->
+            <a href="#contacto" class="bg-[#F97316] text-white px-6 py-2 rounded-full font-bold hover:bg-[#ea580c] transition-all transform hover:scale-105 shadow-md">
+                Cotizar
+            </a>
+        </nav>
+
+        <!-- Botón Móvil -->
+        <button id="menu-toggle" class="md:hidden text-[#1F2A43] focus:outline-none">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+    </div>
+</header>
+   
+<!-- MENÚ MÓVIL -->
+<nav id="mobile-menu" class="md:hidden fixed top-[72px] left-0 w-full bg-white shadow-2xl border-t border-gray-100 transform -translate-y-[150%] transition-transform duration-500 ease-in-out z-[60]">
+    <div class="flex flex-col px-8 py-6 space-y-6 bg-white">
+        <a href="#inicio" class="text-[#1F2A43] text-lg font-semibold py-2 border-b border-gray-50 hover:text-[#F97316]">Inicio</a>
+        <a href="#servicios" class="text-[#1F2A43] text-lg font-semibold py-2 border-b border-gray-50 hover:text-[#F97316]">Servicios</a>
+        <a href="#nosotros" class="text-[#1F2A43] text-lg font-semibold py-2 border-b border-gray-50 hover:text-[#F97316]">Nosotros</a>
+        <a href="#contacto" class="text-[#1F2A43] text-lg font-semibold py-2 border-b border-gray-50 hover:text-[#F97316]">Contacto</a>
+        
+        <!-- Botón Cotizar en móvil -->
+        <a href="#contacto" class="text-white font-bold py-4 rounded-xl bg-[#F97316] text-center shadow-lg shadow-orange-200">
+            Cotizar
+        </a>
+    </div>
+</nav>
+<!-- HERO SECTION -->
+    <section id="inicio" class="relative min-h-[80vh] flex items-center bg-white">
+      <!-- Imagen de fondo real de ingeniería -->
+      <div class="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2070"
+          alt="Ingeniería"
+          class="w-full h-full object-cover opacity-30"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent"
+        ></div>
+      </div>
+      
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-2xl">
+          <h1
+            class="text-5xl md:text-6xl font-bold text-[#1F2A43] leading-tight mb-6"
+          >
+            Ingeniería en bombeo, presurización y tratamiento de agua
+          </h1>
+          <p class="text-xl text-[#334155] mb-8 leading-relaxed">
+            Diseñamos y suministramos sistemas de alta eficiencia para plantas
+            industriales, edificios, comercios y proyectos especiales.
+          </p>
+          
+          <div class="flex flex-wrap gap-4">
+            <a
+              href="#contacto"
+              class="bg-[#F97316] hover:opacity-90 text-white font-bold py-3 px-10 rounded-lg shadow-lg transition"
+            >
+              Solicitar cotización
+            </a>
+            <a
+              href="#servicios"
+              class="border-2 border-[#F97316] text-[#F97316] hover:bg-[#F97316] hover:text-white font-bold py-3 px-10 rounded-lg transition"
+            >
+              Ver servicios
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECCIÓN SERVICIOS -->
+    <section id="servicios" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-[#1F2A43] mb-4">
+            Nuestros Servicios
+          </h2>
+          <div class="w-24 h-1 bg-[#F97316] mx-auto"></div>
+        </div>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+        >
+          <!-- 1. Diseño e ingeniería de sistemas -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col h-full transform transition hover:-translate-y-2"
+          >
+            <div class="h-32 bg-[#334155] overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=200&fit=crop"
+                alt="Diseño e ingeniería"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-8 flex-grow">
+              <h3 class="text-xl font-bold text-[#1F2A43] mb-4">
+                Diseño e ingeniería de sistemas
+              </h3>
+              <p class="text-gray-600">
+                Desarrollamos proyectos integrales desde la concepción técnica
+                hasta la optimización de recursos para sistemas hídricos.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2. Instalación de bombas -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col h-full transform transition hover:-translate-y-2"
+          >
+            <div class="h-32 bg-[#F97316] overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=200&fit=crop"
+                alt="Instalación de bombas"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-8 flex-grow">
+              <h3 class="text-xl font-bold text-[#1F2A43] mb-4">
+                Instalación de bombas
+              </h3>
+              <p class="text-gray-600">
+                Personal experto en el montaje y puesta en marcha de equipos de
+                bombeo industriales y comerciales.
+              </p>
+            </div>
+          </div>
+
+          <!-- 3. Tratamiento de agua -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col h-full transform transition hover:-translate-y-2"
+          >
+            <div class="h-32 bg-[#334155] overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=200&fit=crop"
+                alt="Tratamiento de agua"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-8 flex-grow">
+              <h3 class="text-xl font-bold text-[#1F2A43] mb-4">
+                Tratamiento de agua
+              </h3>
+              <p class="text-gray-600">
+                Soluciones avanzadas para la purificación, filtración y
+                adecuación de la calidad del agua según su uso.
+              </p>
+            </div>
+          </div>
+
+          <!-- 4. Mantenimiento y reparación -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col h-full transform transition hover:-translate-y-2"
+          >
+            <div class="h-32 bg-[#F97316] overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=200&fit=crop"
+                alt="Mantenimiento y reparación"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-8 flex-grow">
+              <h3 class="text-xl font-bold text-[#1F2A43] mb-4">
+                Mantenimiento y reparación
+              </h3>
+              <p class="text-gray-600">
+                Servicio técnico preventivo y correctivo para asegurar la
+                continuidad operativa de sus equipos.
+              </p>
+            </div>
+          </div>
+
+          <!-- 5. Consultoría técnica -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col h-full transform transition hover:-translate-y-2"
+          >
+            <div class="h-32 bg-[#334155] overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=200&fit=crop"
+                alt="Consultoría técnica"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-8 flex-grow">
+              <h3 class="text-xl font-bold text-[#1F2A43] mb-4">
+                Consultoría técnica
+              </h3>
+              <p class="text-gray-600">
+                Asesoría especializada para la selección de equipos y resolución
+                de problemas en sistemas de bombeo.
+              </p>
+            </div>
+          </div>
+
+          <!-- 6. Suministro de equipos -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col h-full transform transition hover:-translate-y-2"
+          >
+            <div class="h-32 bg-[#F97316] overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=200&fit=crop"
+                alt="Suministro de equipos"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-8 flex-grow">
+              <h3 class="text-xl font-bold text-[#1F2A43] mb-4">
+                Suministro de equipos
+              </h3>
+              <p class="text-gray-600">
+                Venta de equipos de las mejores marcas, garantizando eficiencia
+                energética y durabilidad.
+              </p>
+            </div>
+          </div>
+
+          <!-- 7. Automatización de sistemas -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col h-full transform transition hover:-translate-y-2"
+          >
+            <div class="h-32 bg-[#334155] overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=200&fit=crop"
+                alt="Automatización de sistemas"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-8 flex-grow">
+              <h3 class="text-xl font-bold text-[#1F2A43] mb-4">
+                Automatización de sistemas
+              </h3>
+              <p class="text-gray-600">
+                Integración de tableros de control y sistemas inteligentes para
+                el manejo eficiente del agua.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN NOSOTROS -->
+    <section id="nosotros" class="py-20 bg-white">
+      <div
+        class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12"
+      >
+        <div class="md:w-1/2">
+          <img
+            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800"
+            alt="Nosotros"
+            class="rounded-2xl shadow-2xl"
+          />
+        </div>
+        <div class="md:w-1/2">
+          <h2
+            class="text-4xl font-bold text-[#1F2A43] mb-6 border-l-8 border-[#F97316] pl-4"
+          >
+            Sobre Nosotros
+          </h2>
+          <p class="text-lg text-[#334155] mb-6">
+            SUMYSE es una empresa de ingeniería fundada en 2020, especializada
+            en sistemas de bombeo, tratamiento de agua y equipos contra
+            incendio.
+          </p>
+          <p class="text-lg text-[#334155] mb-6">
+            Con un equipo de profesionales con más de 18 años de experiencia,
+            ofrecemos soluciones integrales: diseño, cálculo, instalación y
+            mantenimiento de equipos de alta calidad.
+          </p>
+          <p class="text-lg text-[#334155] mb-8">
+            Nuestro diferencial: experiencia probada, atención personalizada y
+            compromiso con la excelencia en cada proyecto.
+          </p>
+          <div class="grid grid-cols-2 gap-6">
+            <div class="border-t-4 border-[#F97316] pt-4">
+              <span class="block text-3xl font-bold text-[#1F2A43]"
+                >Cobertura</span
+              >
+              <span class="text-[#334155]">Nacional</span>
+            </div>
+            <div class="border-t-4 border-[#F97316] pt-4">
+              <span class="block text-3xl font-bold text-[#1F2A43]">+500</span>
+              <span class="text-[#334155]">Proyectos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECCIÓN PROYECTOS DESTACADOS -->
+    <section class="py-20 bg-[#1F2A43] text-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-10">
+          <h2 class="text-4xl font-bold mb-3">Proyectos Destacados</h2>
+          <p class="text-gray-300">
+            Soluciones profesionales en bombeo, presurización y sistemas contra
+            incendio
+          </p>
+        </div>
+
+        <!-- Contenedor principal SIN MINIATURAS -->
+        <div
+          class="relative bg-[#1F2A43] rounded-2xl border-2 border-[#334155] p-8 max-w-7xl mx-auto shadow-2xl"
+        >
+          <!-- Imagen Principal GRANDE -->
+          <div class="relative rounded-xl overflow-hidden h-[500px] shadow-lg">
+            <img
+              id="mainImage"
+              src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=1400"
+              alt="Proyecto destacado"
+              class="w-full h-full object-cover"
+            />
+
+            <!-- Overlay con información -->
+            <div
+              class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/95 via-black/70 to-transparent p-8"
+            >
+              <h3 id="mainTitle" class="text-3xl font-bold mb-2 text-white">
+                Sistema de Protección Contra Incendio
+              </h3>
+              <p
+                id="mainLocation"
+                class="text-[#F97316] font-semibold text-lg mb-3 flex items-center gap-2"
+              >
+                <span>📍</span> Monterrey, Nuevo León
+              </p>
+              <p
+                id="mainDescription"
+                class="text-gray-200 text-base leading-relaxed max-w-2xl"
+              >
+                Instalación completa de sistema contra incendio para edificio
+                corporativo de 12 niveles. Incluye bomba principal de 150 HP,
+                bomba jockey de 15 HP, tanque de reserva de 20,000 litros, red
+                de rociadores automáticos y sistema de detección y alarma
+                certificado bajo normativa NFPA.
+              </p>
+            </div>
+          </div>
+
+          <!-- Flechas de navegación (MÁS SEPARADAS) -->
+          <button
+            id="prevProject"
+            class="absolute -left-8 md:-left-12 lg:-left-16 top-1/2 -translate-y-1/2 bg-[#F97316] hover:bg-orange-600 text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center shadow-xl transition-all hover:scale-110 z-20 text-2xl font-bold"
+          >
+            ❮
+          </button>
+
+          <button
+            id="nextProject"
+            class="absolute -right-8 md:-right-12 lg:-right-16 top-1/2 -translate-y-1/2 bg-[#F97316] hover:bg-orange-600 text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center shadow-xl transition-all hover:scale-110 z-20 text-2xl font-bold"
+          >
+            ❯
+          </button>
+
+          <!-- Indicadores de puntos (dots) -->
+          <div class="flex justify-center gap-3 mt-8">
+            <button
+              id="dot-0"
+              class="dot-indicator w-3 h-3 rounded-full bg-[#F97316] transition cursor-pointer"
+              data-index="0"
+            ></button>
+            <button
+              id="dot-1"
+              class="dot-indicator w-3 h-3 rounded-full bg-gray-500 transition cursor-pointer"
+              data-index="1"
+            ></button>
+            <button
+              id="dot-2"
+              class="dot-indicator w-3 h-3 rounded-full bg-gray-500 transition cursor-pointer"
+              data-index="2"
+            ></button>
+            <button
+              id="dot-3"
+              class="dot-indicator w-3 h-3 rounded-full bg-gray-500 transition cursor-pointer"
+              data-index="3"
+            ></button>
+            <button
+              id="dot-4"
+              class="dot-indicator w-3 h-3 rounded-full bg-gray-500 transition cursor-pointer"
+              data-index="4"
+            ></button>
+            <button
+              id="dot-5"
+              class="dot-indicator w-3 h-3 rounded-full bg-gray-500 transition cursor-pointer"
+              data-index="5"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="py-20 bg-[#E5E7EB]">
+      <div class="container mx-auto px-4 max-w-6xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Tarjeta Izquierda: Información -->
+          <div
+            class="bg-white p-12 rounded-2xl shadow-sm flex flex-col justify-center"
+          >
+            <h2 class="text-4xl font-bold text-[#1F2A43] mb-4">Contáctanos</h2>
+            <p class="text-gray-600 mb-10 leading-relaxed">
+              Contáctanos para una cotización personalizada. Nuestro equipo de
+              ingenieros está listo para asesorarte en la solución ideal para tu
+              empresa.
+            </p>
+
+            <div class="space-y-8">
+              <!-- Teléfono -->
+              <div class="flex items-center gap-6">
+                <div class="bg-orange-50 p-4 rounded-lg">
+                  <svg
+                    class="w-6 h-6 text-[#F97316]"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    />
+                  </svg>
+                </div>
+                <span class="text-lg font-medium text-[#1F2A43]"
+                  >+52 55 1234 5678</span
+                >
+              </div>
+
+              <!-- Email -->
+              <div class="flex items-center gap-6">
+                <div class="bg-orange-50 p-4 rounded-lg">
+                  <svg
+                    class="w-6 h-6 text-[#F97316]"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                    />
+                  </svg>
+                </div>
+                <span class="text-lg font-medium text-[#1F2A43]"
+                  >proyectos@sumyse.com</span
+                >
+              </div>
+
+              <!-- Dirección (PIN de ubicación como en la imagen) -->
+              <div class="flex items-center gap-6">
+                <div class="bg-orange-50 p-4 rounded-lg">
+                  <svg
+                    class="w-6 h-6 text-[#F97316]"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                    />
+                  </svg>
+                </div>
+                <span class="text-lg font-medium text-[#1F2A43] leading-tight"
+                  >Calle Ejemplo 123, Colonia<br />Centro, CDMX</span
+                >
+              </div>
+
+              <!-- WhatsApp (como en la imagen) -->
+              <div class="flex items-center gap-6">
+                <div class="bg-orange-50 p-4 rounded-lg">
+                  <svg
+                    class="w-6 h-6 text-[#F97316]"
+                    fill="currentColor"
+                    viewBox="0 0 308 308"
+                  >
+                    <path
+                      d="M227.904,176.981c-0.6-0.288-23.054-11.345-27.044-12.781c-1.629-0.585-3.374-1.156-5.23-1.156 c-3.032,0-5.579,1.511-7.563,4.479c-2.243,3.334-9.033,11.271-11.131,13.642c-0.274,0.313-0.648,0.687-0.872,0.687 c-0.201,0-3.676-1.431-4.728-1.888c-24.087-10.463-42.37-35.624-44.877-39.867c-0.358-0.61-0.373-0.887-0.376-0.887 c0.088-0.323,0.898-1.135,1.316-1.554c1.223-1.21,2.548-2.805,3.83-4.348c0.607-0.731,1.215-1.463,1.812-2.153 c1.86-2.164,2.688-3.844,3.648-5.79l0.503-1.011c2.344-4.657,0.342-8.587-0.305-9.856c-0.531-1.062-10.012-23.944-11.02-26.348 c-2.424-5.801-5.627-8.502-10.078-8.502c-0.413,0,0,0-1.732,0.073c-2.109,0.089-13.594,1.601-18.672,4.802 c-5.385,3.395-14.495,14.217-14.495,33.249c0,17.129,10.87,33.302,15.537,39.453c0.116,0.155,0.329,0.47,0.638,0.922 c17.873,26.102,40.154,45.446,62.741,54.469c21.745,8.686,32.042,9.69,37.896,9.69c0.001,0,0.001,0,0.001,0 c2.46,0,4.429-0.193,6.166-0.364l1.102-0.105c7.512-0.666,24.02-9.22,27.775-19.655c2.958-8.219,3.738-17.199,1.77-20.458 C233.168,179.508,230.845,178.393,227.904,176.981z"
+                    />
+                    <path
+                      d="M156.734,0C73.318,0,5.454,67.354,5.454,150.143c0,26.777,7.166,52.988,20.741,75.928L0.212,302.716 c-0.484,1.429-0.124,3.009,0.933,4.085C1.908,307.58,2.943,308,4,308c0.405,0,0.813-0.061,1.211-0.188l79.92-25.396 c21.87,11.685,46.588,17.853,71.604,17.853C240.143,300.27,308,232.923,308,150.143C308,67.354,240.143,0,156.734,0z M156.734,268.994c-23.539,0-46.338-6.797-65.936-19.657c-0.659-0.433-1.424-0.655-2.194-0.655c-0.407,0-0.815,0.062-1.212,0.188 l-40.035,12.726l12.924-38.129c0.418-1.234,0.209-2.595-0.561-3.647c-14.924-20.392-22.813-44.485-22.813-69.677 c0-65.543,53.754-118.867,119.826-118.867c66.064,0,119.812,53.324,119.812,118.867 C276.546,215.678,222.799,268.994,156.734,268.994z"
+                    />
+                  </svg>
+                </div>
+                <span class="text-lg font-medium text-[#1F2A43]"
+                  >+52 55 1234 5678</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Tarjeta Derecha: Formulario -->
+          <div class="bg-white p-12 rounded-2xl shadow-sm">
+            <form class="space-y-6">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Nombre"
+                  class="w-full px-6 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-[#F97316] focus:ring-1 focus:ring-[#F97316] transition text-gray-700"
+                />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="w-full px-6 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-[#F97316] focus:ring-1 focus:ring-[#F97316] transition text-gray-700"
+                />
+              </div>
+              <div>
+                <input
+                  type="tel"
+                  placeholder="Telefono"
+                  class="w-full px-6 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-[#F97316] focus:ring-1 focus:ring-[#F97316] transition text-gray-700"
+                />
+              </div>
+              <div>
+                <label class="block text-gray-500 mb-2 ml-1">Mensaje</label>
+                <textarea
+                  rows="5"
+                  class="w-full px-6 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-[#F97316] focus:ring-1 focus:ring-[#F97316] transition text-gray-700 resize-none"
+                ></textarea>
+              </div>
+              <div class="pt-4">
+                <button
+                  type="submit"
+                  class="w-full bg-[#F97316] hover:bg-orange-600 text-white font-bold py-4 rounded-xl shadow-lg shadow-orange-200 transition-all transform hover:-translate-y-1"
+                >
+                  Enviar mensaje
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#1F2A43] text-white py-12">
+      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <img
+            src="./logo2.png"
+            alt="SUMYSE"
+            class="h-20 mb-4 brightness-200"
+          />
+          <p class="text-gray-400 text-sm">
+            Ingeniería en bombeo y tratamiento de agua.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4">Enlaces rápidos</h4>
+          <ul class="text-gray-400 space-y-2 text-sm">
+            <li>
+              <a href="#" class="hover:text-[#F97316] transition">Inicio</a>
+            </li>
+            <li>
+              <a href="#servicios" class="hover:text-[#F97316] transition"
+                >Servicios</a
+              >
+            </li>
+            <li>
+              <a href="#nosotros" class="hover:text-[#F97316] transition"
+                >Nosotros</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4">Servicios</h4>
+          <ul class="text-gray-400 space-y-2 text-sm">
+            <li>Selección de bombeo</li>
+            <li>Hidroneumáticos</li>
+            <li>Contra incendio</li>
+            <li>Potabilización</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4">Contacto</h4>
+          <p class="text-gray-400 text-sm">proyectos@sumyse.com</p>
+          <p class="text-gray-400 text-sm">+52 55 1234 5678</p>
+        </div>
+      </div>
+      <div
+        class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm"
+      >
+        <p>&copy; 2026 SUMYSE. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+    <script>
+      // DATOS DE LOS PROYECTOS
+      const projects = [
+        {
+          title: "Sistema de Protección Contra Incendio",
+          location: "📍 Monterrey, Nuevo León",
+          description:
+            "Instalación completa de sistema contra incendio para edificio corporativo de 12 niveles. Incluye bomba principal de 150 HP, bomba jockey de 15 HP, tanque de reserva de 20,000 litros, red de rociadores automáticos y sistema de detección y alarma certificado bajo normativa NFPA.",
+          image:
+            "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=1400",
+        },
+        {
+          title: "Sistema Hidroneumático Industrial",
+          location: "📍 Guadalajara, Jalisco",
+          description:
+            "Implementación de sistema hidroneumático de alta capacidad para planta industrial de manufactura. Equipos de bombeo de última generación con variadores de frecuencia, tanques de presión certificados ASME y automatización completa con controles inteligentes y monitoreo remoto 24/7.",
+          image:
+            "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=1400",
+        },
+        {
+          title: "Planta de Tratamiento de Agua",
+          location: "📍 Querétaro, Querétaro",
+          description:
+            "Diseño e instalación de planta completa de tratamiento y purificación de agua para uso industrial. Sistema de ósmosis inversa de alta eficiencia, filtración multi-etapa con carbón activado, suavizadores y almacenamiento con capacidad de 50,000 litros diarios. Cumple con NOM-127-SSA1.",
+          image:
+            "https://images.unsplash.com/photo-1581092795360-6a453b7f66b2?q=80&w=1400",
+        },
+        {
+          title: "Sistema de Presurización para Edificio",
+          location: "📍 Ciudad de México, CDMX",
+          description:
+            "Instalación de sistema booster de presión constante para edificio residencial de 25 pisos. Equipos con tecnología de velocidad variable, garantiza presión uniforme en todos los niveles, automatización inteligente con sensores de flujo y presión, monitoreo remoto en tiempo real.",
+          image:
+            "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=1400",
+        },
+        {
+          title: "Sistema de Riego Agroindustrial",
+          location: "📍 Bajío, Guanajuato",
+          description:
+            "Solución integral de bombeo y distribución de agua para operación agroindustrial de 200 hectáreas. Equipos de alta eficiencia energética con paneles solares, sistemas de riego por goteo automatizado, control de caudal y presión mediante PLC, reducción del 40% en consumo energético.",
+          image:
+            "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=1400",
+        },
+        {
+          title: "Centro Comercial - Sistema Integral",
+          location: "📍 Monterrey, Nuevo León",
+          description:
+            "Implementación de sistema completo de bombeo, presurización y protección contra incendio para centro comercial de 5 niveles con 150 locales. Solución integrada con redundancia automática, respaldo de energía mediante planta de emergencia, cumplimiento total de normativas de protección civil.",
+          image:
+            "https://images.unsplash.com/photo-1581092795360-6a453b7f66b2?q=80&w=1400",
+        },
+      ];
+
+      let currentIndex = 0;
+      let autoPlayInterval;
+
+      // Función para actualizar el carrusel
+      function updateCarousel(index) {
+        currentIndex = index;
+        const project = projects[index];
+
+        // Actualizar imagen principal con transición suave
+        const mainImage = document.getElementById("mainImage");
+        mainImage.style.opacity = "0";
+
+        setTimeout(() => {
+          mainImage.src = project.image;
+          document.getElementById("mainTitle").textContent = project.title;
+          document.getElementById("mainLocation").innerHTML = project.location;
+          document.getElementById("mainDescription").textContent =
+            project.description;
+          mainImage.style.opacity = "1";
+        }, 300);
+
+        // Actualizar dots
+        document.querySelectorAll(".dot-indicator").forEach((dot, i) => {
+          if (i === index) {
+            dot.classList.add("bg-[#F97316]");
+            dot.classList.remove("bg-gray-500");
+          } else {
+            dot.classList.remove("bg-[#F97316]");
+            dot.classList.add("bg-gray-500");
+          }
+        });
+      }
+
+      // Auto-play: cambiar cada 5 segundos
+      function startAutoPlay() {
+        clearInterval(autoPlayInterval);
+        autoPlayInterval = setInterval(() => {
+          const nextIndex = (currentIndex + 1) % projects.length;
+          updateCarousel(nextIndex);
+        }, 5000);
+      }
+
+      // Navegación: Anterior
+      document.getElementById("prevProject").addEventListener("click", () => {
+        const prevIndex =
+          (currentIndex - 1 + projects.length) % projects.length;
+        updateCarousel(prevIndex);
+        startAutoPlay();
+      });
+
+      // Navegación: Siguiente
+      document.getElementById("nextProject").addEventListener("click", () => {
+        const nextIndex = (currentIndex + 1) % projects.length;
+        updateCarousel(nextIndex);
+        startAutoPlay();
+      });
+
+      // Event listeners para los dots
+      document.querySelectorAll(".dot-indicator").forEach((dot) => {
+        dot.addEventListener("click", () => {
+          const index = parseInt(dot.dataset.index);
+          updateCarousel(index);
+          startAutoPlay();
+        });
+      });
+
+      // Agregar transición suave a la imagen
+      document.getElementById("mainImage").style.transition =
+        "opacity 0.3s ease";
+
+      // Iniciar auto-play al cargar
+      startAutoPlay();
+    </script>
+    <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (menuToggle && mobileMenu) {
+        menuToggle.addEventListener('click', () => {
+            // Si está escondido, lo mostramos
+            if (mobileMenu.classList.contains('-translate-y-[150%]')) {
+                mobileMenu.classList.remove('-translate-y-[150%]');
+                mobileMenu.classList.add('translate-y-0');
+            } else {
+                // Si está visible, lo escondemos
+                mobileMenu.classList.remove('translate-y-0');
+                mobileMenu.classList.add('-translate-y-[150%]');
+            }
+        });
+
+        // Cerrar el menú automáticamente al hacer clic en cualquier enlace
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('translate-y-0');
+                mobileMenu.classList.add('-translate-y-[150%]');
+            });
+        });
+    }
+</script>
+<!-- BOTÓN FLOTANTE DE WHATSAPP -->
+<a href="https://wa.me/525512345678?text=Hola%20SUMYSE,%20me%20gustaría%20solicitar%20una%20cotización." 
+   target="_blank" 
+   class="fixed bottom-6 right-6 z-[100] bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center justify-center group"
+   title="Contáctanos por WhatsApp">
+    <!-- Icono de WhatsApp -->
+    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <!-- Texto que aparece al pasar el mouse (opcional) -->
+    <span class="absolute right-16 bg-white text-gray-800 px-3 py-1 rounded-lg shadow-md text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+        ¿Necesitas ayuda?
+    </span>
+</a>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-sumyse-blue-dark: #1F2A43;
+  --color-sumyse-blue-light: #334155;
+  --color-sumyse-orange: #F97316;
+  --color-sumyse-bg: #E5E7EB;
+}
+/* ==== SCROLLBAR PERSONALIZADA ==== */
+.custom-scrollbar::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #1F2A43;
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #F97316;
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #fb8b35;
+}

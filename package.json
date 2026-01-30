@@ -1,0 +1,17 @@
+{
+  "name": "sumyse",
+  "version": "1.0.0",
+  "description": "Sitio web de SUMYSE - Sistemas de bombeo y tratamiento de agua",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./input.css -o ./style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "postcss": "^8.4.32",
+    "autoprefixer": "^10.4.16"
+  }
+}
